@@ -1,0 +1,44 @@
+{
+  "elapsed_seconds": 1.58,
+  "cases": 518,
+  "status_counts": {
+    "INCOMPLETE": 334,
+    "COMPLETE": 174,
+    "NOT_APPLICABLE": 10
+  },
+  "evidence_files": 94,
+  "evidence_formats": {
+    "image": 11,
+    "json": 28,
+    "log": 26,
+    "pdf": 4,
+    "sql": 24,
+    "text": 1
+  },
+  "evidence_observations": 2564,
+  "parse_issues": [],
+  "model": {
+    "provider": "",
+    "model": "",
+    "calls": 0,
+    "cached_calls": 0,
+    "failed_calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "records": []
+  },
+  "model_available": false,
+  "rules_loaded": 15,
+  "validation": {
+    "ok": true,
+    "problems": [],
+    "rows": 518,
+    "unique_case_ids": 518,
+    "status_counts": {
+      "INCOMPLETE": 334,
+      "COMPLETE": 174,
+      "NOT_APPLICABLE": 10
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "purpose": "Structured transcription of the supplied screenshot evidence.",
+    "method": "Manual read of each PNG at full resolution during development. No OCR engine is bundled with the runtime, so the transcribed facts are cached here and loaded deterministically at audit time.",
+    "provenance": "Every fact keeps the manifest file_id as its evidence reference. Nothing in this file contains organizer-only truth, expected deltas, or case ids.",
+    "contract": "Keys are file_id values from dataset/evidence_files.csv. Each record mirrors the fields a parser would extract from the rendered UI: system, resource id, data category, observed state and the identifiers shown on screen."
+  },
+  "files": {
+    "evidence_04": {
+      "screen": "Customer Operations / Customers detail - account_5762",
+      "records": [
+        {
+          "system_id": "account_service",
+          "resource_id": "account_5762",
+          "category": "USER_PROFILE",
+          "state": "PRESENT",
+          "user_refs": ["user_11"],
+          "emails": ["haruka.s1838@zoho.com"],
+          "phones": ["+81 90 7610 2507"],
+          "names": ["Haruka Sato"]
+        }
+      ]
+    },
+    "evidence_09": {
+      "screen": "Search Console / Customer Search - hits for g.silva76@gmail.com",
+      "records": [
+        {
+          "system_id": "search_service",
+          "resource_id": "search_428",
+          "category": "SEARCH_INDEX_ENTRY",
+          "state": "PRESENT",
+          "user_refs": ["user_13"],
+          "emails": ["g.silva76@gmail.com"],
+          "names": ["Gabriel Silva"]
+        }
+      ]
+    },
+    "evidence_14": {
+      "screen": "BridgeOps / Connections - topology detail for data_flow_1121",
+      "records": [
+        {
+          "system_id": "integration_service",
+          "resource_id": "data_flow_1121",
+          "category": "DATA_FLOW",
+          "state": "ACTIVE",
+          "user_refs": ["user_14"],
+          "emails": ["jain.aditi@gmail.com"],
+          "detail": "Status Healthy, sync mode Continuous, last contact within the capture window"
+        }
+      ]
+    },
+    "evidence_19": {
+      "screen": "Pulse Analytics / Users - analytics_7438",
+      "records": [
+        {
+          "system_id": "analytics_platform",
+          "resource_id": "analytics_7438",
+          "category": "ANALYTICS_PROFILE",
+          "state": "PRESENT",
+          "user_refs": ["user_20"],
+          "emails": ["darwish.omar@icloud.com"],
+          "names": ["Omar Darwish"]
+        }
+      ]
+    },
+    "evidence_23": {
+      "screen": "Customer Download Center / Data exports - export_1260",
+      "records": [
+        {
+          "system_id": "export_service",
+          "resource_id": "export_1260",
+          "category": "USER_EXPORT",
+          "state": "PRESENT",
+          "user_refs": ["user_18"],
+          "emails": ["ingrid.dahl@outlook.com"],
+          "detail": "Status Ready; archive includes profile, orders and saved addresses"
+        }
+      ]
+    },
+    "evidence_28": {
+      "screen": "Helpline Console / CS-5034 - support_1034",
+      "records": [
+        {
+          "system_id": "support_platform",
+          "resource_id": "support_1034",
+          "category": "SUPPORT_MESSAGE",
+          "state": "PRESENT",
+          "user_refs": ["user_22"],
+          "emails": ["kagyeman8947@fastmail.com"],
+          "names": ["Kofi Agyeman"],
+          "detail": "Customer and agent conversation retained with direct identifiers visible"
+        }
+      ]
+    },
+    "evidence_32": {
+      "screen": "Vault Recovery Manager / Customer-platform archives - backup_9287",
+      "records": [
+        {
+          "system_id": "backup_service",
+          "resource_id": "backup_9287",
+          "category": "BACKUP_ARCHIVE",
+          "state": "ACTIVE",
+          "user_refs": ["user_16"],
+          "emails": ["areed1433@gmail.com"],
+          "detail": "Archive present in eu-west-1; recent restore jobs completed, so the archive can still be restored"
+        }
+      ]
+    },
+    "evidence_37": {
+      "screen": "Sentinel / Account events - subject filter user_03",
+      "records": [
+        {
+          "system_id": "security_service",
+          "resource_id": "audit_record_003",
+          "category": "SECURITY_AUDIT_LOG",
+          "state": "PRESENT",
+          "user_refs": ["user_03"],
+          "detail": "account_closure_recorded, integrity valid, partition 2026-Q3"
+        }
+      ]
+    },
+    "evidence_42": {
+      "screen": "Customer Reference Registry / user_17 - retained reference",
+      "records": [
+        {
+          "system_id": "identity_service",
+          "resource_id": "tombstone_17",
+          "category": "ACCOUNT_TOMBSTONE",
+          "state": "REDACTED",
+          "user_refs": ["user_17"],
+          "emails": ["leonie.g9352@outlook.com"],
+          "detail": "Registry shows only the stable customer key user_17; no name, email, phone or hash are rendered"
+        }
+      ]
+    },
+    "evidence_46": {
+      "screen": "Nimbus Object Storage / northstar-customer-data support attachments - object_19",
+      "records": [
+        {
+          "system_id": "object_storage",
+          "resource_id": "object_19",
+          "category": "SUPPORT_ATTACHMENT",
+          "state": "PRESENT",
+          "detail": "delivery_confirmation_19.pdf, 684 KB, version v3, uploader support-service"
+        }
+      ]
+    },
+    "evidence_60": {
+      "screen": "Audience Operations / marketing_001",
+      "records": [
+        {
+          "system_id": "marketing_platform",
+          "resource_id": "marketing_001",
+          "category": "MARKETING_PROFILE",
+          "state": "PRESENT",
+          "user_refs": ["user_09"],
+          "emails": ["sj.park@naver.com"],
+          "phones": ["+82 10-5837-9451"],
+          "names": ["Soo-jin Park"],
+          "detail": "Live audience profile, email opt-in Yes, refresh 15 Sep 2026"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Cache folders
+.cache/
+
+# Logs
+*.log
+log.txt
+
+# Generated outputs
+tmp_output.csv
+
+# Archives
+*.zip
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Virtual environments
+venv/
+.venv/
+env/
